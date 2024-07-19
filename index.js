@@ -32,8 +32,23 @@ const songs = [
         artist: "Chase Atlantic",
     },
     {
+        name: "her",
+        displayName: "HER",
+        artist: "Chase Atlantic",
+    },
+    {
+        name: "no-rainbows",
+        displayName: "NO RAINBOWS",
+        artist: "Chase Atlantic",
+    },
+    {
         name: "heaven-and-back",
         displayName: "HEAVEN AND BACK",
+        artist: "Chase Atlantic",
+    },
+    {
+        name: "stuckinmybrain",
+        displayName: "STUCKINMYBRAIN",
         artist: "Chase Atlantic",
     },
 ];
