@@ -51,6 +51,21 @@ const songs = [
         displayName: "STUCKINMYBRAIN",
         artist: "Chase Atlantic",
     },
+    {
+        name: "even-though-im-depressed",
+        displayName: "EVEN THOUGH I'M DEPRESSED",
+        artist: "Chase Atlantic",
+    },
+    {
+        name: "too-late",
+        displayName: "TOO LATE",
+        artist: "Chase Atlantic",
+    },
+    {
+        name: "i-never-existed",
+        displayName: "I NEVER EXISTED",
+        artist: "Chase Atlantic",
+    },
 ];
 
 // check if playing
