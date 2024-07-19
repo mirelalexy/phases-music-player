@@ -1,0 +1,139 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    background-color: rgb(211, 55, 232);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.music-player-container{
+    background: linear-gradient(0deg, rgba(58,59,59,1) 0%, rgba(177,18,187,1) 100%);
+    padding: 1.2rem 1.2rem;
+    border-radius: 10px;
+    padding-bottom: 2%;
+}
+
+.song-title{
+    font-family: League Spartan, sans-serif;
+    font-weight: 500;
+    color: white;
+    font-size: 1.7rem;
+    margin-bottom: 5px;
+    margin-top: 30px;
+}
+
+.song-artist{
+    font-family: League Spartan, sans-serif;
+    font-weight: 300;
+    color: rgb(205, 204, 204);
+    font-size: 1.2rem;
+    margin-top: 0px;
+}
+
+.album-cover-container{
+    width: 330px;
+}
+
+#album-cover{
+    width: 330px;
+    border-radius: 10px;
+}
+
+.progress-bar-container{
+    background: rgba(211, 55, 232, 0.323);
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5%;
+    height: 4px;
+    width: 100%;
+}
+
+.progress{
+    background: white;
+    border-radius: 5px;
+    height: 100%;
+    /* to show progress - this will be changed dinamically with JS */
+    width: 66%;
+    transform: width 0.1s linear;
+}
+
+/* control buttons */
+.controls{
+    position: relative;
+    margin-top: 20%;
+    display: flex;
+    justify-content: center;
+    margin-left: 15%;
+}
+
+.buttons{
+    font-size: 30px;
+    color: white;
+    margin-right: 50px;
+    cursor: pointer;
+    user-select: none; /* because there's no text to select since it's an icon */
+}
+
+.buttons:hover{
+    color: rgb(171, 168, 168);
+}
+
+.duration-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4px;
+    color: rgb(205, 204, 204);
+    font-size: 0.8rem;
+    font-family: League Spartan, sans-serif;
+    margin-top: 10px;
+}
+
+@media (max-width: 1000px){
+    .album-cover-container{
+        width: 300px;
+        display: flex;
+        justify-content: center;
+    }
+    #album-cover{
+        width: 280px;
+        border-radius: 10px;
+    }
+    .song-title{
+        font-size: 1.3rem;
+        margin-bottom: 5px;
+        margin-top: 30px;
+        margin-left: 3%;
+    }
+    .song-artist{
+        font-size: 1rem;
+        margin-top: 0px;
+        margin-left: 3%;
+    }
+    .music-player-container{
+        padding-bottom: 5%;
+    }
+    .controls{
+        margin-top: 20%;
+        margin-left: 15%;
+    }
+    .buttons{
+        margin-right: 40px;
+    }
+    .music-player-container{
+        background: linear-gradient(0deg, rgba(58,59,59,1) 0%, rgba(177,18,187,1) 100%);
+        padding: 1.2rem 1.2rem;
+        padding-bottom: 5%;
+    }
+    .progress-bar-container{
+        margin-left: 3%;
+        width: 93%;
+    }
+}

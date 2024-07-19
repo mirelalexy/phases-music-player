@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHASES Music Player</title>
+    <link rel="icon" href="assets/images/icon.svg">
+    <script src="https://kit.fontawesome.com/97d77012f0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- music player -->
+    <div class="music-player-container">
+        <!-- song -->
+        <div class="album-cover-container">
+            <img src="assets/images/phases.png" id="album-cover" alt="PHASES by Chase Atlantic album cover">
+        </div>
+        <h2 class="song-title">HEAVEN AND BACK</h2>
+        <h3 class="song-artist">Chase Atlantic</h3>
+        <audio src="assets/mp3/heaven-and-back.mp3"></audio>
+        <!-- progress bar -->
+        <div class="progress-bar-container">
+            <div class="progress"></div>
+            <div class="duration-wrapper">
+                <span id="current-time">0:00</span>
+                <span id="duration">4:08</span>
+            </div>
+        </div>
+        <!-- control buttons -->
+        <div class="controls">
+            <i class="buttons fa-solid fa-backward" id="prev" title="Previous"></i>
+            <i class="buttons fa-solid fa-play main-button" id="play" title="Play"></i>
+            <i class="buttons fa-solid fa-forward" id="next" title="Next"></i>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
