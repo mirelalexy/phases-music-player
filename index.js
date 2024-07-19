@@ -3,6 +3,8 @@ const artist = document.querySelector("h3");
 const music = document.querySelector("audio");
 const progressContainer = document.querySelector(".progress-bar-container");
 const progress = document.querySelector(".progress");
+const currentTimeElement = document.querySelector("#current-time");
+const durationElement = document.querySelector("#duration");
 const prevBtn = document.querySelector("#prev");
 const playBtn = document.querySelector("#play");
 const nextBtn = document.querySelector("#next");
@@ -98,11 +100,32 @@ loadSong(songs[songIndex]);
 function updateProgressBar(event){
     if (isPlaying){
         const {duration, currentTime} = event.srcElement;
-        console.log(duration, currentTime);
-        // update progress bar width
+        // updating progress bar width
         const progressPercent = (currentTime / duration) * 100;
         progress.style.width = `${progressPercent}%`; // transforming percent into string to change value in CSS
 
+        // updating duration for each song
+        // minutes
+        const durationMinutes = Math.floor(duration / 60); /* duration is originally in seconds, we need minutes */
+        // seconds
+        let durationSeconds = Math.floor(duration % 60);
+        if (durationSeconds < 10){ // we need two digits
+            durationSeconds = `0${durationSeconds}`;
+        }
+        // delay switching duration to avoid NaN showing up on screen
+        if (durationSeconds){
+            durationElement.textContent = `${durationMinutes}:${durationSeconds}`;
+        }
+
+        // updating current time for each song
+        const currentMinutes = Math.floor(currentTime / 60);
+        // seconds
+        let currentSeconds = Math.floor(currentTime % 60);
+        if (currentSeconds < 10){ // we need two digits
+            currentSeconds = `0${currentSeconds}`;
+        }
+
+        currentTimeElement.textContent = `${currentMinutes}:${currentSeconds}`;
     }
 }
 
