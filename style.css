@@ -8,14 +8,13 @@ html{
 body{
     margin: 0;
     min-height: 100vh;
-    background-color: rgb(211, 55, 232);
+    background: linear-gradient(0deg, rgb(31, 31, 31) 0%, rgba(177,18,187,1) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .music-player-container{
-    background: linear-gradient(0deg, rgba(58,59,59,1) 0%, rgba(177,18,187,1) 100%);
     padding: 1.2rem 1.2rem;
     border-radius: 10px;
     padding-bottom: 2%;
@@ -36,6 +35,25 @@ body{
     color: rgb(205, 204, 204);
     font-size: 1.2rem;
     margin-top: 0px;
+}
+
+h5{
+    font-family: League Spartan, sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 0.9rem;
+    margin-bottom: 0;
+    margin-top: 3px;
+    text-align: center;
+}
+
+h6{
+    font-family: League Spartan, sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 1.1rem;
+    margin-top: 5px;
+    text-align: center;
 }
 
 .album-cover-container{
@@ -95,44 +113,46 @@ body{
     margin-top: 10px;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 500px){
     .album-cover-container{
-        width: 300px;
+        width: 370px;
         display: flex;
         justify-content: center;
     }
     #album-cover{
-        width: 280px;
+        width: 360px;
         border-radius: 10px;
     }
     .song-title{
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         margin-bottom: 5px;
-        margin-top: 30px;
-        margin-left: 3%;
+        margin-top: 60px;
+        margin-left: 1.7%;
+        font-weight: 600;
     }
     .song-artist{
-        font-size: 1rem;
+        font-size: 1.2rem;
         margin-top: 0px;
-        margin-left: 3%;
-    }
-    .music-player-container{
-        padding-bottom: 5%;
+        margin-left: 1.8%;
+        margin-bottom: 10%;
     }
     .controls{
-        margin-top: 20%;
+        margin-top: 10%;
         margin-left: 15%;
     }
     .buttons{
-        margin-right: 40px;
+        margin-right: 50px;
     }
     .music-player-container{
-        background: linear-gradient(0deg, rgba(58,59,59,1) 0%, rgba(177,18,187,1) 100%);
-        padding: 1.2rem 1.2rem;
         padding-bottom: 5%;
+        width: 370px;
     }
     .progress-bar-container{
-        margin-left: 3%;
-        width: 93%;
+        margin-left: 1.8%;
+        width: 97%;
+    }
+    body{
+        min-height: 93vh;
+        overflow: hidden;
     }
 }
