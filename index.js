@@ -129,9 +129,25 @@ function updateProgressBar(event){
     }
 }
 
+// setting progress bar to change song's current time
+function setProgressBar(event){
+    const width = this.clientWidth;
+    const clickBar = event.offsetX;
+    const {duration} = music;
+    /*The destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.*/
+    music.currentTime = (clickBar / width) * duration;
+}
+
+
 // previous and next buttons
 prevBtn.addEventListener("click", prevSong);
 nextBtn.addEventListener("click", nextSong);
 
 // progress bar
 music.addEventListener("timeupdate", updateProgressBar);
+
+// progress container (change to a different time when clicking on bar)
+progressContainer.addEventListener("click", setProgressBar);
+
+// when song is over, go to the next one
+music.addEventListener("ended", nextSong);
