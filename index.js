@@ -1,6 +1,8 @@
 const title = document.querySelector("h2");
 const artist = document.querySelector("h3");
 const music = document.querySelector("audio");
+const progressContainer = document.querySelector(".progress-bar-container");
+const progress = document.querySelector(".progress");
 const prevBtn = document.querySelector("#prev");
 const playBtn = document.querySelector("#play");
 const nextBtn = document.querySelector("#next");
@@ -92,6 +94,21 @@ function nextSong(){
 // on load - selecting first song
 loadSong(songs[songIndex]);
 
+// updating progress bar and time
+function updateProgressBar(event){
+    if (isPlaying){
+        const {duration, currentTime} = event.srcElement;
+        console.log(duration, currentTime);
+        // update progress bar width
+        const progressPercent = (currentTime / duration) * 100;
+        progress.style.width = `${progressPercent}%`; // transforming percent into string to change value in CSS
+
+    }
+}
+
 // previous and next buttons
 prevBtn.addEventListener("click", prevSong);
 nextBtn.addEventListener("click", nextSong);
+
+// progress bar
+music.addEventListener("timeupdate", updateProgressBar);

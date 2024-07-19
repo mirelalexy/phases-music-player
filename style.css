@@ -60,8 +60,7 @@ body{
     background: white;
     border-radius: 5px;
     height: 100%;
-    /* to show progress - this will be changed dinamically with JS */
-    width: 66%;
+    width: 0%;
     transform: width 0.1s linear;
 }
 
