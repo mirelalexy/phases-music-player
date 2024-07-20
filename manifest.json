@@ -13,7 +13,7 @@
       }
     ],
     "start_url": "https://mirelalexy.github.io/phases-music-player/",
-    "background_color": "rgba(177,18,187,1)",
+    "background_color": "rgb(177,18,187)",
     "display": "standalone",
     "theme_color": "rgb(31, 31, 31)",
     "shortcuts": [
