@@ -22,7 +22,7 @@
         "short_name": "PHASES",
         "description": "Listen to Chase Atlantic's album, PHASES, for free.",
         "url": "https://mirelalexy.github.io/phases-music-player/index.html",
-        "icons": [{ "src": "assets/images/app-icon.png", "sizes": "192x192" }]
+        "icons": [{ "src": "assets/images/app-icon-small.png", "sizes": "192x192" }]
       }
     ],
     "description": "A music player for Chase Atlantic's album, PHASES",
