@@ -66,6 +66,11 @@ const songs = [
         displayName: "I NEVER EXISTED",
         artist: "Chase Atlantic",
     },
+    {
+        name: "i-dont-like-darkness",
+        displayName: "I DON'T LIKE DARKNESS",
+        artist: "Chase Atlantic",
+    },
 ];
 
 // check if playing
