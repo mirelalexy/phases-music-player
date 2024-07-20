@@ -2,8 +2,8 @@
     "short_name": "PHASES",
     "icons": [
       {
-        "src": "assets/images/app-icon-small.jpg",
-        "type": "image/jpg",
+        "src": "assets/images/app-icon-small.png",
+        "type": "image/png",
         "sizes": "192x192"
       },
       {
