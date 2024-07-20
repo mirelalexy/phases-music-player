@@ -1,0 +1,44 @@
+{
+    "short_name": "PHASES",
+    "name": "PHASES: Music Player",
+    "icons": [
+      {
+        "src": "assets/images/app-icon-small.jpg",
+        "type": "image/jpg",
+        "sizes": "192x192"
+      },
+      {
+        "src": "assets/images/app-icon.png",
+        "type": "image/png",
+        "sizes": "500x500"
+      }
+    ],
+    "start_url": "../index.html",
+    "background_color": "rgba(177,18,187,1)",
+    "display": "standalone",
+    "theme_color": "rgb(31, 31, 31)",
+    "shortcuts": [
+      {
+        "name": "Play PHASES by Chase Atlantic",
+        "short_name": "PHASES",
+        "description": "Listen to Chase Atlantic's album, PHASES, for free.",
+        "url": "../index.html",
+        "icons": [{ "src": "assets/images/app-icon.png", "sizes": "192x192" }]
+      }
+    ],
+    "description": "A music player for Chase Atlantic's album, PHASES",
+    "screenshots": [
+      {
+        "src": "assets/images/narrow.png",
+        "type": "image/png",
+        "sizes": "516x842",
+        "form_factor": "narrow"
+      },
+      {
+        "src": "assets/images/wide.png",
+        "type": "image/png",
+        "sizes": "1329x858",
+        "form_factor": "wide"
+      }
+    ]
+  }
