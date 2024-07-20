@@ -12,7 +12,7 @@
         "sizes": "500x500"
       }
     ],
-    "start_url": "../index.html",
+    "start_url": "https://mirelalexy.github.io/phases-music-player/",
     "background_color": "rgba(177,18,187,1)",
     "display": "standalone",
     "theme_color": "rgb(31, 31, 31)",
@@ -21,7 +21,7 @@
         "name": "Play PHASES by Chase Atlantic",
         "short_name": "PHASES",
         "description": "Listen to Chase Atlantic's album, PHASES, for free.",
-        "url": "../index.html",
+        "url": "https://mirelalexy.github.io/phases-music-player/index.html",
         "icons": [{ "src": "assets/images/app-icon.png", "sizes": "192x192" }]
       }
     ],
